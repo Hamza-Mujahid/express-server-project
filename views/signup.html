@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <style>
+        .headerContainer {
+            display: flex;
+            justify-content: center;
+        }
+
+        form {
+            border: 5px solid #000;
+            padding: 10px;
+            border-radius: 50px;
+            width: 50%;
+            margin: 0 auto;
+        }
+
+        input,
+        button {
+            display: block;
+            margin: 0 auto;
+            padding: 5px;
+            border: none;
+            height: 25px;
+            width: 165px;
+            border-radius: 5px;
+            text-align: center;
+        }
+
+        input:hover,
+        button:hover {
+            border: 2px double #000;
+            border-radius: 10px;
+            width: 170px;
+            height: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="headerContainer">
+            <h1>
+                Sign Up
+            </h1>
+        </div>
+    </header>
+    <div class="formContainer">
+        <form action="/login" method="post" class="myform">
+            <input type="text" name="username" placeholder="Enter Your Name!">
+            <input type="email" name="email" placeholder="Enter Your email!">
+            <input type="password" name="password" placeholder="Create Your password!">
+            <button type="reset">Reset</button>
+            <button type="submit">Submit</button>
+        </form>
+        <a href="./login.html">Login</a>
+    </div>
+</body>
+
+</html>
